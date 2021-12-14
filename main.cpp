@@ -27,15 +27,15 @@ int main()
             while(c!=0){
             cout<<"Ingrese una letra ";cin>>letra;
             if(letra=='a'||letra=='e'||letra=='i'||letra=='o'||letra=='u'||letra=='A'||letra=='E'||letra=='I'||letra=='O'||letra=='U'){
-                cout<<"La letra ingresada es una vocal"<<endl;
+                cout<<letra<<" es una vocal"<<endl;
                 c=0;
             }
             else if((letra>='B'&&letra<='D')||(letra>='F'&&letra<='H')||(letra>='J'&&letra<='N')||(letra>='P'&&letra<='T')||(letra>='V'&&letra<='Z')||(letra>='b'&&letra<='d')||(letra>='f'&&letra<='h')||(letra>='j'&&letra<='n')||(letra>='p'&&letra<='t')||(letra>='v'&&letra<='z')){
-                cout<<"La letra ingresada es una consnante"<<endl;
+                cout<<letra<<" es una consnante"<<endl;
                 c=0;
             }
             else {
-                cout<<"La letra ingresada no es valida"<<endl;
+                cout<<"No es una letra"<<endl;
                 c=0;
             }
                 }
@@ -132,8 +132,7 @@ int main()
         int num, factorial;
         float ter_v, ter_n=1;
 
-        cout<<"Ingrese un numero de elementos: "<<endl;
-        cin>>num;
+        cout<<"Ingrese un numero de elementos: "; cin>>num;
 
         factorial=1;
         for(int i=1; i<=num-1; i++){
@@ -141,6 +140,7 @@ int main()
             ter_v=1.0/factorial;
             ter_n=ter_n+ter_v;
         }
+        cout<<"e es aproximadamente "<<ter_n<<endl;
        break;
     }
      case 5:{
@@ -188,7 +188,7 @@ int main()
             cout<<"Ingrese un numero "; cin>>n;
 
             for(int i=n/2;i>=1;i--){
-                if(n%i==0 && i>mayor){
+                if(n%i==0 && i>mayor){   //verifico si es multiplo
                     for(int j=i/2;j>=1;j--){
                     if(i%j==0)c++;
                     }
