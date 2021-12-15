@@ -101,26 +101,26 @@ int main()
         for(int i=0; i<=n/2; i++){
             int tope1=n/2-i;
             for(int h=0; h<tope1;h++){
-                cout<<'-';
+                cout<<' ';
             }
             for(int j=0; j<2*i+1; j++){
                 cout<<'*';
             }
             for(int h=0; h<tope1;h++){
-                cout<<'-';
+                cout<<' ';
             }
             cout<<endl;
         }
         for(int i=n/2; i>0; i--){
             int tope2=n/2-i;
             for(int h=tope2; h>=0;h--){
-                cout<<'-';
+                cout<<' ';
             }
             for(int j=0; j<2*i-1; j++){
                 cout<<'*';
             }
             for(int h=tope2; h>=0;h--){
-                cout<<'-';
+                cout<<' ';
             }
             cout<<endl;
             }
